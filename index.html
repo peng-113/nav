@@ -41,15 +41,15 @@
     z-index: 1;
     padding: 48px 48px 36px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
   }
   .logo {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 28px;
-    letter-spacing: -0.5px;
+    font-size: 36px;
+    letter-spacing: -1px;
     color: var(--text);
   }
   .logo span {
@@ -110,7 +110,9 @@
   .search-box input::placeholder { color: var(--muted); }
   .search-engine {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+    margin-top: 10px;
   }
   .engine-btn {
     background: none;
@@ -118,7 +120,7 @@
     color: var(--muted);
     font-family: 'DM Sans', sans-serif;
     font-size: 12px;
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.15s;
@@ -250,8 +252,8 @@
   }
 
   @media (max-width: 600px) {
-    header { padding: 28px 20px 24px; }
-    .search-wrap, main { padding-left: 20px; padding-right: 20px; }
+    header { padding: 24px 16px 20px; }
+    .search-wrap, main { padding-left: 16px; padding-right: 16px; }
     #clock { font-size: 26px; }
     .logo { font-size: 20px; }
   }
@@ -271,12 +273,12 @@
   <div class="search-box">
     <span class="search-icon">🔍</span>
     <input type="text" id="search-input" placeholder="搜索或输入网址..." autocomplete="off">
-    <div class="search-engine">
-      <button class="engine-btn active" data-url="https://www.baidu.com/s?wd=">百度</button>
-      <button class="engine-btn" data-url="https://www.google.com/search?q=">Google</button>
-      <button class="engine-btn" data-url="https://www.bing.com/search?q=">Bing</button>
-      <button class="engine-btn" data-url="https://search.yahoo.com/search?p=">Yahoo</button>
-    </div>
+  </div>
+  <div class="search-engine">
+    <button class="engine-btn active" data-url="https://www.baidu.com/s?wd=">百度</button>
+    <button class="engine-btn" data-url="https://www.google.com/search?q=">Google</button>
+    <button class="engine-btn" data-url="https://www.bing.com/search?q=">Bing</button>
+    <button class="engine-btn" data-url="https://search.yahoo.com/search?p=">Yahoo</button>
   </div>
 </div>
 
