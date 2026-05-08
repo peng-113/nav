@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "cat-work",
+      "label": "工作 & 效率",
+      "sites": [
+        { "icon": "📝", "name": "Notion",       "url": "https://notion.so" },
+        { "icon": "📅", "name": "Google 日历",  "url": "https://calendar.google.com" },
+        { "icon": "📧", "name": "Gmail",        "url": "https://mail.google.com" },
+        { "icon": "☁️", "name": "Google Drive", "url": "https://drive.google.com" },
+        { "icon": "🎨", "name": "Figma",        "url": "https://figma.com" },
+        { "icon": "⚡", "name": "Linear",       "url": "https://linear.app" }
+      ]
+    },
+    {
+      "id": "cat-news",
+      "label": "新闻 & 资讯",
+      "sites": [
+        { "icon": "🔶", "name": "Hacker News", "url": "https://news.ycombinator.com" },
+        { "icon": "🤖", "name": "Reddit",      "url": "https://www.reddit.com" },
+        { "icon": "🚀", "name": "36氪",        "url": "https://www.36kr.com" },
+        { "icon": "✦",  "name": "少数派",      "url": "https://sspai.com" },
+        { "icon": "📡", "name": "BBC",         "url": "https://www.bbc.com" }
+      ]
+    },
+    {
+      "id": "cat-video",
+      "label": "视频 & 娱乐",
+      "sites": [
+        { "icon": "▶️", "name": "YouTube",  "url": "https://www.youtube.com" },
+        { "icon": "📺", "name": "哔哩哔哩", "url": "https://www.bilibili.com" },
+        { "icon": "🎬", "name": "Netflix",  "url": "https://www.netflix.com" },
+        { "icon": "🎵", "name": "Spotify",  "url": "https://open.spotify.com" },
+        { "icon": "🎮", "name": "Twitch",   "url": "https://www.twitch.tv" }
+      ]
+    },
+    {
+      "id": "cat-shop",
+      "label": "购物",
+      "sites": [
+        { "icon": "📦", "name": "Amazon JP", "url": "https://www.amazon.co.jp" },
+        { "icon": "🛒", "name": "楽天市場",  "url": "https://www.rakuten.co.jp" },
+        { "icon": "♻️", "name": "メルカリ",  "url": "https://www.mercari.com/jp/" },
+        { "icon": "🏮", "name": "淘宝",      "url": "https://www.taobao.com" }
+      ]
+    },
+    {
+      "id": "cat-ai",
+      "label": "AI 工具",
+      "sites": [
+        { "icon": "✦",  "name": "Claude",     "url": "https://claude.ai" },
+        { "icon": "💬", "name": "ChatGPT",    "url": "https://chatgpt.com" },
+        { "icon": "♊",  "name": "Gemini",     "url": "https://gemini.google.com" },
+        { "icon": "🔭", "name": "Perplexity", "url": "https://www.perplexity.ai" },
+        { "icon": "🖼️", "name": "Midjourney", "url": "https://midjourney.com" },
+        { "icon": "🎶", "name": "Suno",       "url": "https://suno.com" }
+      ]
+    }
+  ]
+}
