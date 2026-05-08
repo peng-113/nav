@@ -2,58 +2,157 @@
   "categories": [
     {
       "id": "cat-work",
-      "label": "工作 & 效率",
+      "label": "å·¥ä½ & æç",
       "sites": [
-        { "icon": "📝", "name": "Notion",       "url": "https://notion.so" },
-        { "icon": "📅", "name": "Google 日历",  "url": "https://calendar.google.com" },
-        { "icon": "📧", "name": "Gmail",        "url": "https://mail.google.com" },
-        { "icon": "☁️", "name": "Google Drive", "url": "https://drive.google.com" },
-        { "icon": "🎨", "name": "Figma",        "url": "https://figma.com" },
-        { "icon": "⚡", "name": "Linear",       "url": "https://linear.app" }
+        {
+          "icon": "ð",
+          "name": "Google æ¥å",
+          "url": "https://calendar.google.com"
+        },
+        {
+          "icon": "ð§",
+          "name": "Gmail",
+          "url": "https://mail.google.com"
+        },
+        {
+          "icon": "âï¸",
+          "name": "Google Drive",
+          "url": "https://drive.google.com"
+        },
+        {
+          "icon": "ð¨",
+          "name": "Figma",
+          "url": "https://figma.com"
+        },
+        {
+          "icon": "â¡",
+          "name": "Linear",
+          "url": "https://linear.app"
+        }
       ]
     },
     {
       "id": "cat-news",
-      "label": "新闻 & 资讯",
+      "label": "æ°é» & èµè®¯",
       "sites": [
-        { "icon": "🔶", "name": "Hacker News", "url": "https://news.ycombinator.com" },
-        { "icon": "🤖", "name": "Reddit",      "url": "https://www.reddit.com" },
-        { "icon": "🚀", "name": "36氪",        "url": "https://www.36kr.com" },
-        { "icon": "✦",  "name": "少数派",      "url": "https://sspai.com" },
-        { "icon": "📡", "name": "BBC",         "url": "https://www.bbc.com" }
+        {
+          "icon": "ð¶",
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "icon": "ð¤",
+          "name": "Reddit",
+          "url": "https://www.reddit.com"
+        },
+        {
+          "icon": "ð",
+          "name": "36æ°ª",
+          "url": "https://www.36kr.com"
+        },
+        {
+          "icon": "â¦",
+          "name": "å°æ°æ´¾",
+          "url": "https://sspai.com"
+        },
+        {
+          "icon": "ð¡",
+          "name": "BBC",
+          "url": "https://www.bbc.com"
+        }
       ]
     },
     {
       "id": "cat-video",
-      "label": "视频 & 娱乐",
+      "label": "è§é¢ & å¨±ä¹",
       "sites": [
-        { "icon": "▶️", "name": "YouTube",  "url": "https://www.youtube.com" },
-        { "icon": "📺", "name": "哔哩哔哩", "url": "https://www.bilibili.com" },
-        { "icon": "🎬", "name": "Netflix",  "url": "https://www.netflix.com" },
-        { "icon": "🎵", "name": "Spotify",  "url": "https://open.spotify.com" },
-        { "icon": "🎮", "name": "Twitch",   "url": "https://www.twitch.tv" }
+        {
+          "icon": "â¶ï¸",
+          "name": "YouTube",
+          "url": "https://www.youtube.com"
+        },
+        {
+          "icon": "ðº",
+          "name": "åå©åå©",
+          "url": "https://www.bilibili.com"
+        },
+        {
+          "icon": "ð¬",
+          "name": "Netflix",
+          "url": "https://www.netflix.com"
+        },
+        {
+          "icon": "ðµ",
+          "name": "Spotify",
+          "url": "https://open.spotify.com"
+        },
+        {
+          "icon": "ð®",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv"
+        }
       ]
     },
     {
       "id": "cat-shop",
-      "label": "购物",
+      "label": "è´­ç©",
       "sites": [
-        { "icon": "📦", "name": "Amazon JP", "url": "https://www.amazon.co.jp" },
-        { "icon": "🛒", "name": "楽天市場",  "url": "https://www.rakuten.co.jp" },
-        { "icon": "♻️", "name": "メルカリ",  "url": "https://www.mercari.com/jp/" },
-        { "icon": "🏮", "name": "淘宝",      "url": "https://www.taobao.com" }
+        {
+          "icon": "ð¦",
+          "name": "Amazon JP",
+          "url": "https://www.amazon.co.jp"
+        },
+        {
+          "icon": "ð",
+          "name": "æ¥½å¤©å¸å ´",
+          "url": "https://www.rakuten.co.jp"
+        },
+        {
+          "icon": "â»ï¸",
+          "name": "ã¡ã«ã«ãª",
+          "url": "https://www.mercari.com/jp/"
+        },
+        {
+          "icon": "ð®",
+          "name": "æ·å®",
+          "url": "https://www.taobao.com"
+        }
       ]
     },
     {
       "id": "cat-ai",
-      "label": "AI 工具",
+      "label": "AI å·¥å·",
       "sites": [
-        { "icon": "✦",  "name": "Claude",     "url": "https://claude.ai" },
-        { "icon": "💬", "name": "ChatGPT",    "url": "https://chatgpt.com" },
-        { "icon": "♊",  "name": "Gemini",     "url": "https://gemini.google.com" },
-        { "icon": "🔭", "name": "Perplexity", "url": "https://www.perplexity.ai" },
-        { "icon": "🖼️", "name": "Midjourney", "url": "https://midjourney.com" },
-        { "icon": "🎶", "name": "Suno",       "url": "https://suno.com" }
+        {
+          "icon": "â¦",
+          "name": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "icon": "ð¬",
+          "name": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "icon": "â",
+          "name": "Gemini",
+          "url": "https://gemini.google.com"
+        },
+        {
+          "icon": "ð­",
+          "name": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        },
+        {
+          "icon": "ð¼ï¸",
+          "name": "Midjourney",
+          "url": "https://midjourney.com"
+        },
+        {
+          "icon": "ð¶",
+          "name": "Suno",
+          "url": "https://suno.com"
+        }
       ]
     }
   ]
