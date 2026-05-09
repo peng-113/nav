@@ -245,28 +245,30 @@ let fileSha = '';  // GitHub 需要 sha 来更新文件
 
 async function fetchData() {
   const cfg = loadConfig();
-  const url = cfg.user && cfg.repo
-    ? `https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/data.json`
-    : 'data.json';
-
   try {
     if (cfg.user && cfg.repo) {
-      const headers = { 'Accept': 'application/vnd.github+json' };
-      if (cfg.token) headers['Authorization'] = 'token ' + cfg.token;
-      const res = await fetch(url, { headers });
-      if (!res.ok) throw new Error('GitHub API ' + res.status);
-      const meta = await res.json();
+      // 先用 API 拿 sha（只取元数据，不解码 content）
+      const metaRes = await fetch(
+        `https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/data.json`,
+        { headers: { 'Accept': 'application/vnd.github+json', ...(cfg.token ? { 'Authorization': 'token ' + cfg.token } : {}) } }
+      );
+      if (!metaRes.ok) throw new Error('GitHub API ' + metaRes.status);
+      const meta = await metaRes.json();
       fileSha = meta.sha;
-      const b64 = meta.content.replace(/\n/g, '');
-      const bytes = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
-      DATA = JSON.parse(new TextDecoder('utf-8').decode(bytes));
+      // 用 raw 直链读取，浏览器直接处理 UTF-8，完全绕开 base64 中文乱码
+      const rawRes = await fetch(
+        `https://raw.githubusercontent.com/${cfg.user}/${cfg.repo}/main/data.json?t=` + Date.now(),
+        cfg.token ? { headers: { 'Authorization': 'token ' + cfg.token } } : {}
+      );
+      if (!rawRes.ok) throw new Error('raw 读取失败 ' + rawRes.status);
+      DATA = await rawRes.json();
     } else {
       const res = await fetch('data.json?t=' + Date.now());
       if (!res.ok) throw new Error('本地 data.json 加载失败');
       DATA = await res.json();
     }
   } catch (e) {
-    console.warn('数据加载失败，使用内置默认数据', e);
+    console.warn('数据加载失败', e);
   }
   render();
 }
